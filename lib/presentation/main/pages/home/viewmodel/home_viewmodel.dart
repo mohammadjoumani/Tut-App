@@ -10,12 +10,7 @@ import 'package:tut_app/presentation/common/state_renderer/state_renderer_impl.d
 
 class HomeViewModel extends BaseViewModel
     with HomeViewModelInput, HomeViewModelOutput {
-  final StreamController _servicesStreamController =
-      BehaviorSubject<List<Service>>();
-  final StreamController _bannersStreamController =
-      BehaviorSubject<List<BannerAd>>();
-  final StreamController _storesStreamController =
-      BehaviorSubject<List<Store>>();
+  final _dataStreamController = BehaviorSubject<HomeViewObject>();
 
   HomeDataUseCase _homeDataUseCase;
 
@@ -28,36 +23,36 @@ class HomeViewModel extends BaseViewModel
 
   @override
   void dispose() {
-    _servicesStreamController.close();
-    _bannersStreamController.close();
-    _storesStreamController.close();
+    _dataStreamController.close();
   }
 
   //region Inputs
 
   @override
-  Sink get inputBanners => _bannersStreamController.sink;
+  Sink get inputHomeData => _dataStreamController.sink;
 
-  @override
-  Sink get inputServices => _servicesStreamController.sink;
-
-  @override
-  Sink get inputStores => _storesStreamController.sink;
+  // @override
+  // Sink get inputServices => _servicesStreamController.sink;
+  //
+  // @override
+  // Sink get inputStores => _storesStreamController.sink;
 
   void _getHomeData() async {
     inputState.add(LoadingState(
         stateRendererType: StateRendererType.fullScreenLoadingState));
     (await _homeDataUseCase.execute(Void)).fold(
         (failure) => {
+              // left -> failure
               inputState.add(ErrorState(
                   StateRendererType.fullScreenErrorState, failure.message))
-            },
-        (data) {
-          inputState.add(ContentState());
-          inputServices.add(data.services);
-          inputBanners.add(data.banners);
-          inputStores.add(data.stores);
-        });
+            }, (homeObject) {
+      // right -> data (success)
+      // content
+      inputState.add(ContentState());
+      inputHomeData.add(HomeViewObject(homeObject.data!.stores!,
+          homeObject.data!.services!, homeObject.data!.banners!));
+      // navigate to main screen
+    });
   }
 
   //endregion
@@ -65,36 +60,36 @@ class HomeViewModel extends BaseViewModel
   //region Outputs
 
   @override
-  Stream<List<BannerAd>> get outBanners =>
-      _bannersStreamController.stream.map((banners) => banners);
+  Stream<HomeViewObject> get outputHomeData =>
+      _dataStreamController.stream.map((data) => data);
 
-  @override
-  Stream<List<Service>> get outServices =>
-      _servicesStreamController.stream.map((services) => services);
-
-  @override
-  Stream<List<Store>> get outStores =>
-      _storesStreamController.stream.map((stores) => stores);
+// @override
+// Stream<List<Service>> get outServices =>
+//     _servicesStreamController.stream.map((services) => services);
+//
+// @override
+// Stream<List<Store>> get outStores =>
+//     _storesStreamController.stream.map((stores) => stores);
 
 //endregion
 
-//region Private fun
+  //region Private fun
 
 //endregion
 }
 
 abstract class HomeViewModelInput {
-  Sink get inputServices;
-
-  Sink get inputBanners;
-
-  Sink get inputStores;
+  Sink get inputHomeData;
 }
 
 abstract class HomeViewModelOutput {
-  Stream<List<Service>> get outServices;
+  Stream<HomeViewObject> get outputHomeData;
+}
 
-  Stream<List<BannerAd>> get outBanners;
+class HomeViewObject {
+  List<Store> stores;
+  List<Service> services;
+  List<BannerAd> banners;
 
-  Stream<List<Store>> get outStores;
+  HomeViewObject(this.stores, this.services, this.banners);
 }

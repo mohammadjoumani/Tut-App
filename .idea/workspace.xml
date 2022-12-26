@@ -12,7 +12,47 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="876fd0d4-b443-43c3-b598-e5aad1090975" name="Changes" comment="" />
+    <list default="true" id="876fd0d4-b443-43c3-b598-e5aad1090975" name="Changes" comment="Commit 01:&#10;01- Add project tut app.">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/version" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/data_source/remote_data_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/data_source/remote_data_source.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/mapper/mapper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/mapper/mapper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/network/app_api.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/network/app_api.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/network/app_api.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/network/app_api.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/repository/repository_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/repository/repository_impl.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/response/responses.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/response/responses.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/response/responses.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/response/responses.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/domain/model/models.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/domain/model/models.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/domain/repository/repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/domain/repository/repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/domain/usecase/home_usecarse.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/domain/usecase/home_usecarse.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/base/base_viewmodel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/base/base_viewmodel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/common/freezed_data_classes.freezed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/common/freezed_data_classes.freezed.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/main/pages/home/view/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/main/pages/home/view/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/main/pages/home/viewmodel/home_viewmodel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/main/pages/home/viewmodel/home_viewmodel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,8 +93,8 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Novers/Nerd/nerd-android-novers" />
+    <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">

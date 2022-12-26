@@ -99,4 +99,10 @@ class HomeData {
   HomeData(this.services, this.banners, this.stores);
 }
 
+class HomeObject {
+  HomeData? data;
+
+  HomeObject(this.data);
+}
+
 //endregion

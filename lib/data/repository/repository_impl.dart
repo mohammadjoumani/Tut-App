@@ -89,7 +89,7 @@ class RepositoryImpl extends Repository {
   }
 
   @override
-  Future<Either<Failure, HomeData>> getHomeData() async {
+  Future<Either<Failure, HomeObject>> getHomeData() async {
     if (await _networkInfo.isConnected) {
       try {
         final response = await _remoteDataSource.getHomeData();
