@@ -5,7 +5,7 @@ import 'package:tut_app/presentation/auth/register/view/register_view.dart';
 import 'package:tut_app/presentation/main/main_view.dart';
 import 'package:tut_app/presentation/onboarding/view/onboarding_view.dart';
 import 'package:tut_app/presentation/resources/string_manager.dart';
-import 'package:tut_app/presentation/store_details/store_details_view.dart';
+import 'package:tut_app/presentation/store_details/view/store_details_view.dart';
 
 import '../../app/di.dart';
 import '../auth/login1/login1_view.dart';
@@ -45,6 +45,7 @@ class RouteGenerator {
         initHomeModule();
         return MaterialPageRoute(builder: (_) => const MainView());
       case Routes.storeDetailsRoute:
+        initStoreDetailsModule();
         return MaterialPageRoute(builder: (_) => const StoreDetailsView());
       default:
         return unDefinedRoute();

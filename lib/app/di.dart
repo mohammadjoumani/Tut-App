@@ -14,10 +14,13 @@ import 'package:tut_app/presentation/auth/forgot_password/viewmodel/forget_passw
 import 'package:tut_app/presentation/auth/login/viewmodel/login_viewmodel.dart';
 import 'package:tut_app/presentation/main/pages/home/viewmodel/home_viewmodel.dart';
 
+import '../data/data_source/local_data_source.dart';
 import '../data/data_source/remote_data_source.dart';
 import '../data/network/dio_factory.dart';
 import '../data/network/netword_info.dart';
+import '../domain/usecase/store_details_usecarse.dart';
 import '../presentation/auth/register/viewmodel/register_viewmodel.dart';
+import '../presentation/store_details/viewmodel/store_details_viewmodel.dart';
 
 final instance = GetIt.instance;
 
@@ -48,9 +51,12 @@ Future<void> initAppModule() async {
   instance.registerLazySingleton<RemoteDataSource>(
       () => RemoteDataSourceImpl(instance()));
 
+  //LocalDataSource instance
+  instance.registerLazySingleton<LocalDataSource>(() => LocalDataSourceImpl());
+
   //Repository instance
   instance.registerLazySingleton<Repository>(
-      () => RepositoryImpl(instance(), instance()));
+      () => RepositoryImpl(instance(), instance(), instance()));
 }
 
 void initLoginModule() {
@@ -80,5 +86,12 @@ void initHomeModule() {
   if (!GetIt.I.isRegistered<HomeDataUseCase>()) {
     instance.registerFactory<HomeDataUseCase>(() => HomeDataUseCase(instance()));
     instance.registerFactory<HomeViewModel>(() => HomeViewModel(instance()));
+  }
+}
+
+void initStoreDetailsModule() {
+  if (!GetIt.I.isRegistered<StoreDetailsUseCase>()) {
+    instance.registerFactory<StoreDetailsUseCase>(() => StoreDetailsUseCase(instance()));
+    instance.registerFactory<StoreDetailsViewModel>(() => StoreDetailsViewModel(instance()));
   }
 }

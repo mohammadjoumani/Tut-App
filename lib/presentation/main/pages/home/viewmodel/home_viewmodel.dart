@@ -8,6 +8,8 @@ import 'package:tut_app/presentation/base/base_viewmodel.dart';
 import 'package:tut_app/presentation/common/state_renderer/state_renderer.dart';
 import 'package:tut_app/presentation/common/state_renderer/state_renderer_impl.dart';
 
+import '../../../../../domain/usecase/store_details_usecarse.dart';
+
 class HomeViewModel extends BaseViewModel
     with HomeViewModelInput, HomeViewModelOutput {
   final _dataStreamController = BehaviorSubject<HomeViewObject>();

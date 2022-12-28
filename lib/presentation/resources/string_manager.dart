@@ -77,6 +77,14 @@ class AppStrings {
 
   //endregion
 
+  //region Store Details
+
+  static const storeDetails = "storeDetails";
+  static const details = "details";
+  static const about = "about";
+
+  //endregion
+
   //region Notifications Page
 
   //endregion

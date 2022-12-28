@@ -82,6 +82,19 @@ extension HomeResponseMapper on HomeResponse {
   }
 }
 
+extension StoreDetailsResponseMapper on StoreDetailsResponse {
+  StoreDetails toDomain() {
+    return StoreDetails(
+      id?.orZero() ?? Constants.zero,
+      title?.orEmpty() ?? Constants.empty,
+      image?.orEmpty() ?? Constants.empty,
+      details?.orEmpty() ?? Constants.empty,
+      services?.orEmpty() ?? Constants.empty,
+      about?.orEmpty() ?? Constants.empty,
+    );
+  }
+}
+
 // List<Service> serviceList = (this.data?.services?.map((serviceResponse) => serviceResponse.toDomain()) ?? const Iterable.empty()).cast<Service>().toList();
 // List<BannerAd> bannerList = (this.data?.banners?.map((bannerResponse) => bannerResponse.toDomain()) ?? const Iterable.empty()).cast<BannerAd>().toList();
 // List<Store> storeList = (this.data?.stores?.map((storeResponse) => storeResponse.toDomain()) ?? const Iterable.empty()).cast<Store>().toList();
