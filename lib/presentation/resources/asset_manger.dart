@@ -15,6 +15,12 @@ class ImageAssets {
 
   static String photoCameraIc = "$IMAGE_PATH/photo_camera.svg";
 
+  static String changeLangIc = "$IMAGE_PATH/ic_language.svg";
+  static String rightArrowSettingsIc = "$IMAGE_PATH/ic_right_arrow_settings.svg";
+  static String contactUsIc = "$IMAGE_PATH/ic_contact_us.svg";
+  static String inviteFriendsIc = "$IMAGE_PATH/ic_invite_friends.svg";
+  static String logoutIc = "$IMAGE_PATH/ic_logout.svg";
+
 }
 
 class JsonAssets {

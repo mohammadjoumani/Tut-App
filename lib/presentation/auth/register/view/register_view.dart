@@ -117,8 +117,8 @@ class _RegisterViewState extends State<RegisterView> {
                           keyboardType: TextInputType.emailAddress,
                           controller: _userNameEditingController,
                           decoration: InputDecoration(
-                              hintText: AppStrings.userName,
-                              labelText: AppStrings.userName,
+                              hintText: AppStrings.username,
+                              labelText: AppStrings.username,
                               errorText: snapshot.data),
                         );
                       }),

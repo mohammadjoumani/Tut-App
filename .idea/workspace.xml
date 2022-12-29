@@ -12,10 +12,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="876fd0d4-b443-43c3-b598-e5aad1090975" name="Changes" comment="Commit 02:&#10;01- Modify home page.">
-      <change afterPath="$PROJECT_DIR$/lib/data/data_source/local_data_source.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/domain/usecase/store_details_usecarse.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/presentation/store_details/viewmodel/store_details_viewmodel.dart" afterDir="false" />
+    <list default="true" id="876fd0d4-b443-43c3-b598-e5aad1090975" name="Changes" comment="Commit 03:&#10;01- Add Store Details.&#10;02- Add LocalDataSource.">
+      <change afterPath="$PROJECT_DIR$/assets/images/ic_contact_us.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ic_invite_friends.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ic_language.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ic_logout.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ic_right_arrow_settings.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/translations/ar-SA.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/translations/en-US.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -24,21 +28,16 @@
       <change beforePath="$PROJECT_DIR$/android/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app/di.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/di.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/data_source/remote_data_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/data_source/remote_data_source.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/mapper/mapper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/mapper/mapper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/network/app_api.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/network/app_api.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/network/app_api.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/network/app_api.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/repository/repository_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/repository/repository_impl.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/response/responses.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/response/responses.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/response/responses.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/response/responses.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/domain/model/models.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/domain/model/models.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/domain/repository/repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/domain/repository/repository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/main/pages/home/viewmodel/home_viewmodel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/main/pages/home/viewmodel/home_viewmodel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/resources/routes_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/resources/routes_manager.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app/app_prefs.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/app_prefs.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/auth/forgot_password/view/forgot_password_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/auth/forgot_password/view/forgot_password_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/auth/login/view/login_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/auth/login/view/login_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/auth/login1/login1_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/auth/login1/login1_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/auth/register/view/register_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/auth/register/view/register_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/main/main_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/main/main_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/main/pages/settings/view/settings_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/main/pages/settings/view/settings_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/resources/asset_manger.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/resources/asset_manger.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/presentation/resources/string_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/resources/string_manager.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/store_details/store_details_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/store_details/view/store_details_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,20 +80,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="true" />
+    <property name="ToolWindowCommit.ShowToolbar" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/presentation/store_details/viewmodel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project Work\My Project\Tut App\Tut-App\assets\images" />
+      <recent name="D:\Project Work\My Project\Tut App\Tut-App\assets\translations" />
       <recent name="D:\Project Work\My Project\Tut App\Tut-App\lib\presentation\store_details\viewmodel" />
       <recent name="D:\Project Work\My Project\Tut App\Tut-App\lib\presentation\store_details" />
       <recent name="D:\Project Work\My Project\Tut App\Tut-App\lib\domain\usecase" />
-      <recent name="D:\Project Work\My Project\Tut App\Tut-App\lib\data\data_source" />
-      <recent name="C:\Users\MohAmmmad\AndroidStudioProjects\tut_app\lib\domain\usecase" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Project Work\My Project\Tut App\Tut-App\lib\presentation\store_details\view" />
@@ -133,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672094683967</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit 03:&#10;01- Add Store Details.&#10;02- Add LocalDataSource.">
+      <created>1672262326330</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672262326330</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,7 +157,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit 01:&#10;01- Add project tut app." />
     <MESSAGE value="Commit 02:&#10;01- Modify home page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 02:&#10;01- Modify home page." />
+    <MESSAGE value="Commit 03:&#10;01- Add Store Details.&#10;02- Add LocalDataSource." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 03:&#10;01- Add Store Details.&#10;02- Add LocalDataSource." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -169,6 +177,11 @@
           <url>file://$PROJECT_DIR$/lib/data/repository/repository_impl.dart</url>
           <line>137</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/presentation/main/pages/settings/view/settings_page.dart</url>
+          <line>65</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

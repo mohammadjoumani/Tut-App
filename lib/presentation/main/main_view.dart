@@ -21,7 +21,7 @@ class _MainViewState extends State<MainView> {
     HomePage(),
     Notifications(),
     Search(),
-    Settings(),
+    SettingsPage(),
   ];
 
   List<String> titles = [
