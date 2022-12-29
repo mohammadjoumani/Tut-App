@@ -7,7 +7,7 @@ import 'package:tut_app/presentation/main/pages/home/viewmodel/home_viewmodel.da
 import 'package:tut_app/presentation/resources/color_manager.dart';
 import 'package:tut_app/presentation/resources/string_manager.dart';
 import 'package:tut_app/presentation/resources/values_manager.dart';
-
+import 'package:easy_localization/easy_localization.dart';
 import '../../../../resources/routes_manager.dart';
 
 class HomePage extends StatefulWidget {
@@ -55,9 +55,9 @@ class _HomePageState extends State<HomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               _getBannerWidget(snapshot.data?.banners),
-              _getSection(AppStrings.services),
+              _getSection(AppStrings.services.tr()),
               _getServicesWidget(snapshot.data?.services),
-              _getSection(AppStrings.stores),
+              _getSection(AppStrings.stores.tr()),
               _getStoresWidget(snapshot.data?.stores),
             ],
           );

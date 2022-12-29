@@ -7,6 +7,7 @@ import '../../../common/state_renderer/state_renderer_impl.dart';
 import '../../../resources/asset_manger.dart';
 import '../../../resources/string_manager.dart';
 import '../../../resources/values_manager.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class ForgotPasswordView extends StatefulWidget {
   const ForgotPasswordView({Key? key}) : super(key: key);
@@ -73,11 +74,11 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
                     controller: _emailController,
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
-                        hintText: AppStrings.username,
-                        labelText: AppStrings.username,
+                        hintText: AppStrings.username.tr(),
+                        labelText: AppStrings.username.tr(),
                         errorText: (snapShot.data ?? true)
                             ? null
-                            : AppStrings.invalidEmail
+                            : AppStrings.invalidEmail.tr()
                     ),
                   ),
                 ),
@@ -95,7 +96,7 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
                               ? () {
                             _viewModel.forgetPassword();
                           } : null,
-                          child: const Text(AppStrings.login)),
+                          child: Text(AppStrings.login.tr())),
                     )
                 ),
               ),
@@ -103,7 +104,7 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
                 padding: const EdgeInsets.symmetric(horizontal: AppPadding.p28),
                 child: TextButton(
                     onPressed: () {},
-                    child: Text(AppStrings.forgetPassword)),
+                    child: Text(AppStrings.forgetPassword.tr())),
               )
             ],
           ),

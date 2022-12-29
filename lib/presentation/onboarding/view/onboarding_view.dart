@@ -10,6 +10,7 @@ import '../../../domain/model/models.dart';
 import '../../resources/constants_manager.dart';
 import '../../resources/values_manager.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class OnBoardingView extends StatefulWidget {
   const OnBoardingView({Key? key}) : super(key: key);
@@ -70,7 +71,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                     Navigator.pushReplacementNamed(context, Routes.loginRoute);
                     _appPref.setOnBoardingScreenViewed();
                   },
-                  child: Text(AppStrings.skip,
+                  child: Text(AppStrings.skip.tr(),
                       textAlign: TextAlign.end)),
             ],
           ),

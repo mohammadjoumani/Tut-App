@@ -35,8 +35,6 @@ dependencies:
   dio: ^4.0.6
   json_serializable: ^6.1.4
   dartz: ^0.10.1
-  # The following adds the Cupertino Icons fonts to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   internet_connection_checker: ^0.0.1+4
   shared_preferences: ^2.0.13
@@ -48,6 +46,8 @@ dependencies:
   flutter_bloc: ^8.1.1
   rxdart: ^0.27.7
   carousel_slider: ^4.1.1
+  easy_localization: ^3.0.1
+  flutter_phoenix: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -95,6 +95,8 @@ flutter:
     - assets/json/error.json
     - assets/json/loading.json
     - assets/json/success.json
+    - assets/translations/ar-SA.json
+    - assets/translations/en-US.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

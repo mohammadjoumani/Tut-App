@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:tut_app/presentation/main/pages/home/view/home_page.dart';
 import 'package:tut_app/presentation/main/pages/notifications/view/notifications_page.dart';
 import 'package:tut_app/presentation/main/pages/search/view/search_page.dart';
@@ -25,10 +25,10 @@ class _MainViewState extends State<MainView> {
   ];
 
   List<String> titles = [
-    AppStrings.home,
-    AppStrings.notifications,
-    AppStrings.search,
-    AppStrings.settings
+    AppStrings.home.tr(),
+    AppStrings.notifications.tr(),
+    AppStrings.search.tr(),
+    AppStrings.settings.tr()
   ];
 
   int _currentIndex = 0;
@@ -52,15 +52,15 @@ class _MainViewState extends State<MainView> {
         child: BottomNavigationBar(
             items: [
               BottomNavigationBarItem(
-                  icon: Icon(Icons.home_outlined), label: AppStrings.home),
+                  icon: Icon(Icons.home_outlined), label: AppStrings.home.tr()),
               BottomNavigationBarItem(
                   icon: Icon(Icons.notifications_outlined),
-                  label: AppStrings.notifications),
+                  label: AppStrings.notifications.tr()),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.search_outlined), label: AppStrings.search),
+                  icon: Icon(Icons.search_outlined), label: AppStrings.search.tr()),
               BottomNavigationBarItem(
                   icon: Icon(Icons.settings_outlined),
-                  label: AppStrings.settings)
+                  label: AppStrings.settings.tr())
             ],
             backgroundColor: ColorManager.white,
             selectedItemColor: ColorManager.primary,
